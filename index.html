@@ -18,10 +18,48 @@
     <input type="hidden" name="sitesearch" />
     <input type="text" name="q" placeholder="search..." class="search-bar"/>
     <input type="submit" value="GO" class="submit-button">
- </form>
+ </form> 
  
- 
- 
+ /* 
+ =========================================================
+ SEARCH 
+ =========================================================
+ */
+ form{ 
+    width:100% 
+    max-width:600px; 
+    margin:0 auto; 
+ }
+ input{ 
+    width:100%; 
+    font-size:32px; 
+    margin:5px 0; 
+    float:left; 
+    border:none; 
+    padding:10px; 
+    outline:none;
+ }
+ .search-bar{ 
+    width:85%; 
+ }
+ .submit-button{ 
+    width:15%; 
+    background:#000; 
+    color:#FFF; 
+ }
+       <!--ADD THIS TO THE <head>...</head> of your index.html FILE -->
+       <link rel="stylesheet"
+       herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
+
+
+
+
+       <!--ADD THIS TO THE <body>...</body> of your index.html FILE -->
+       <section class="bookmarks">
+        <a href="https://mail.google.com" target="_blank"> 
+            <i class="fas fa-envelope"></i>
+        </a>
+        <i class="fas fa-sticky-note" onclick=" showNote()"></i>
  
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
